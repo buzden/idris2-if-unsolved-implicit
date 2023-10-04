@@ -42,7 +42,7 @@ v = unXm $ MkX 5
 
 In this case, we get an error
 
-```
+```console
 Error: Unsolved holes:
  07 | unXm : X n -> Nat
  08 | unXm $ MkX m = m
