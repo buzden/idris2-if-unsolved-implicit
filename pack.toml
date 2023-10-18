@@ -1,6 +1,3 @@
-[install]
-whitelist = [ "if-unsolved-implicit-tests" ]
-
 [custom.all.if-unsolved-implicit]
 type = "local"
 path = "."
