@@ -5,5 +5,6 @@ license = "Apache-2.0"
 brief = "An interface helping to set a value to an implicit when it is unsolved"
 
 sourcedir = "src"
+builddir = ".build"
 
 modules = Language.Implicits.IfUnsolved
