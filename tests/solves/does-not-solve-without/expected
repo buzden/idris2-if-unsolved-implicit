@@ -1,6 +1,6 @@
 1/1: Building Spec (Spec.idr)
 Error: Unsolved holes:
-Spec.{n:830} introduced at: 
+Spec.{n:825} introduced at: 
 Spec:10:14--10:19
  06 | unXm : X -> Nat
  07 | unXm $ MkX m = m
