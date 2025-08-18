@@ -1,5 +1,8 @@
 rm -rf build
 
+NAMES_CLEANER="$(dirname "$(dirname "$(realpath "$1")")")"/.clean-names
+
+{
 flock "$1" pack -q install-deps test.ipkg && \
 idris2 --no-color --console-width 0 --no-banner --find-ipkg --check README.md && \
 for mn in `grep 'main.* : IO ()' README.md | sed 's/ : IO ()$//' | sed 's/^ *//'`; do
@@ -9,5 +12,6 @@ for mn in `grep 'main.* : IO ()' README.md | sed 's/ : IO ()$//' | sed 's/^ *//'
   echo "---------------------------------"
   idris2 --find-ipkg --exec "$mn" README.md
 done
+} | "$NAMES_CLEANER"
 
 rm -rf build

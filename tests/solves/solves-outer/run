@@ -1,6 +1,10 @@
 rm -rf build/
 
+NAMES_CLEANER="$(dirname "$(dirname "$(realpath "$1")")")"/.clean-names
+
+{
 flock "$1" pack -q install-deps test.ipkg && \
 idris2 --no-color --console-width 0 --no-banner --find-ipkg Spec.idr < input
+} | "$NAMES_CLEANER"
 
 rm -rf build/

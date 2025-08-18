@@ -39,7 +39,7 @@ space_redirects = true
 [{Makefile,*.mk}]
 indent_style = tab
 
-[expected]
+[{expected,.clean-names}]
 trim_trailing_whitespace = false
 max_line_length = off
 
