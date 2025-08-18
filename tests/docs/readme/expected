@@ -1,7 +1,7 @@
 1/1: Building README (README.md)
 Error: Unsolved holes:
-README.Unsolved.{n:874} introduced at: 
-README:38:5--38:17
+README.Unsolved.{n:1} introduced at: 
+README:1
  34 | unXm : X n -> Nat
  35 | unXm $ MkX m = m
  36 | 
