@@ -4,7 +4,7 @@ README.Unsolved.{n:1} introduced at:
 README:1
  34 | unXm : X n -> Nat
  35 | unXm $ MkX m = m
- 36 | 
+ 36 |
  37 | v : Nat
  38 | v = unXm $ MkX 5
           ^^^^^^^^^^^^

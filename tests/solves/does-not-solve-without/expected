@@ -4,7 +4,7 @@ Spec.{n:1} introduced at:
 Spec:1
  06 | unXm : X -> Nat
  07 | unXm $ MkX m = m
- 08 | 
+ 08 |
  09 | Val : Nat
  10 | Val = unXm $ MkX 5
                    ^^^^^
